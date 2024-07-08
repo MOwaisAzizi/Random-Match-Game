@@ -8,7 +8,7 @@ main{
    max-width: 800px;
    border-radius: 10px;
    margin: auto;
-   padding: 10px 40px;
+   padding: 10px 30px;
    text-align: center;
    
 }.die{
@@ -49,7 +49,7 @@ main{
    text-align: center;
 }
 .dic-container{
-   margin-top: 20px;
+   padding: 10px 20px;
 }.DiceWin{
    background-color: rgb(33, 247, 33);
    height: 100vh;
