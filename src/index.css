@@ -8,7 +8,7 @@ main{
    max-width: 800px;
    border-radius: 10px;
    margin: auto;
-   padding: 10px 30px;
+   padding: 10px 40px;
    text-align: center;
    
 }.die{
@@ -71,7 +71,7 @@ main{
 }.result{
    border: solid 1px white;
    border-radius: 5px;
-   padding: 7px 12px;
+   padding: 7px 14px;
    color: white;
    text-align: center;
 

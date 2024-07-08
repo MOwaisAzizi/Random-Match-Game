@@ -6,7 +6,7 @@ export default function App(props) {
       const [tenzies, setTenzies] = useState(false)
       const [isWin, setIsWin] = useState(false)
       const [isStart, setIsStart] = useState(true)
-      let [sec, setSec] = useState(window.innerWidth >= 1000 ? 40 : 30)
+      let [sec, setSec] = useState(window.innerWidth >= 1000 ? 30 : 20)
       let [runing, setRuning] = useState(false)
       let [wins, setWins] = useState(0)
       let [losts, setLosts] = useState(0)
@@ -35,7 +35,7 @@ export default function App(props) {
                         alert('You Win! 🔥')
                   }, 50);
 
-                  window.innerWidth >= 1000 ? setSec(40) : setSec(30)
+                  window.innerWidth >= 1000 ? setSec(30) : setSec(20)
             }
       }, [dices])
 
@@ -43,7 +43,7 @@ export default function App(props) {
             setRuning(true)
             setDices(allnewDices())
             setTenzies(false)
-            window.innerWidth >= 1000 ? setSec(40) : setSec(30)
+            window.innerWidth >= 1000 ? setSec(30) : setSec(20)
             setIsWin(false)
             setIsStart(false)
       }
