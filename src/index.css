@@ -1,0 +1,89 @@
+body{
+   margin: 0;
+}*{
+   box-sizing: border-box;
+}
+main{
+   height: 400px;
+   max-width: 800px;
+   border-radius: 10px;
+   margin: auto;
+   padding: 10px 30px;
+   text-align: center;
+   
+}.die{
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+   margin: 7px;
+   width: 55px;
+   height: 40px;
+   display: inline-block;
+   text-align: center;
+   cursor: pointer;
+   font-size: 20px;
+}
+.btnroll{
+   text-align: center;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+   border-radius: 5px;
+   color: white;
+   background-color: rgb(34, 34, 247);
+   border: none;
+   transition: 0.5s;
+   font-size: 20px;
+   width: 150px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}.btnroll:hover{
+   background-color: rgb(8, 8, 204);
+   font-size: 21px;
+   width: 155px;
+   height: 55px;
+} main h2,p{
+   text-align: center;
+}
+.dic-container{
+   margin-top: 20px;
+}.DiceWin{
+   background-color: rgb(33, 247, 33);
+   height: 100vh;
+   color: white;
+}
+.DiceLost{
+   background-color: red;
+   height: 100vh;
+   color: white;
+}.time{
+   font-size: 25px;
+}
+.results{
+   display: flex;
+   justify-content: space-between;
+   font-size: 20px;
+   margin-top: 10px;
+   align-items: center;
+}.result{
+   border: solid 1px white;
+   border-radius: 5px;
+   padding: 7px 12px;
+   color: white;
+   text-align: center;
+
+}.wins{
+   background-color: rgb(20, 235, 20);
+}
+.losts{
+   background-color: rgb(245, 25, 25);
+}
+
+@media only screen and (min-width: 700px){
+   main{
+      padding: 100px;
+   }
+}
