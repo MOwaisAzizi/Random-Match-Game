@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Die from "./Die";
 
-export default function App(props) {
+export default function App() {
       const [dices, setDices] = useState(allnewDices())
       const [tenzies, setTenzies] = useState(false)
       const [isWin, setIsWin] = useState(false)
@@ -24,7 +24,6 @@ export default function App(props) {
             allDiceheld = dices.every(dice => dice.isHeld === true)
             const firstDice = dices[0].value
             allSamevlaue = dices.every(dice => dice.value == firstDice)
-            className = 'DiceWin'
 
             if (allDiceheld && allSamevlaue) {
                   setWins(pre => pre + 1);
@@ -34,7 +33,6 @@ export default function App(props) {
                   setTimeout(() => {
                         alert('You Win! 🔥')
                   }, 50);
-
                   window.innerWidth >= 1000 ? setSec(30) : setSec(20)
             }
       }, [dices])
@@ -47,7 +45,6 @@ export default function App(props) {
             setIsWin(false)
             setIsStart(false)
       }
-
 
       function allnewDices() {
             let newDice = []
@@ -76,8 +73,7 @@ export default function App(props) {
                   isheld={dice.isHeld} key={dice.id}
                   isStart={isStart}
                   sec={sec}
-                  isWin={isWin}
-            />
+                  isWin={isWin}/>
       })
 
       if (sec === 0) {
@@ -110,7 +106,6 @@ export default function App(props) {
 
 
       return (
-
             <main className={className}>
                   <div className="results">
                         <div className="wins result">Wins: {wins}</div>
@@ -118,7 +113,7 @@ export default function App(props) {
                         <div className="losts result">Fails: {losts}</div>
                   </div>
                   <div>
-                        <h2>Random Match Game</h2>
+                        <h2>Random Match Game!</h2>
                         <p>Roll until all dices are the same.
                               Click each die to freeze it at its current value between rolls.</p>
                         <div className="dic-container">
