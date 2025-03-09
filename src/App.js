@@ -31,7 +31,7 @@ export default function App() {
                   setRuning(false)
                   setIsWin(true)
                   setTimeout(() => {
-                        alert('You Win! 🔥')
+                  alert('You Win! 🔥')
                   }, 50);
                   window.innerWidth >= 1000 ? setSec(30) : setSec(20)
             }
